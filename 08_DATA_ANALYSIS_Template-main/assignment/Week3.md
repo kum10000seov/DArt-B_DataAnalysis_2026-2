@@ -50,7 +50,9 @@ https://www.youtube.com/watch?v=hhbzUEQWdTg&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXg
 
 # 2️⃣ 수행 인증
 
-※ API 발급 과정 (공공도서관)
+※ API 발급 결과 (도서관 정보나루)
+
+<img width="611" height="508" alt="image" src="https://github.com/user-attachments/assets/24325ffe-3b99-47e5-94f8-593df8057bb2" />
 
 
 <br>
