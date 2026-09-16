@@ -54,6 +54,8 @@ https://www.youtube.com/watch?v=hhbzUEQWdTg&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXg
 
 <img width="611" height="508" alt="image" src="https://github.com/user-attachments/assets/24325ffe-3b99-47e5-94f8-593df8057bb2" />
 
+
+
 ※ 데이터 분석 수행 과정
 
 
