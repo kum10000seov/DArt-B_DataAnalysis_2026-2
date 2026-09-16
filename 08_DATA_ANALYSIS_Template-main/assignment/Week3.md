@@ -49,6 +49,12 @@ https://www.youtube.com/watch?v=hhbzUEQWdTg&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXg
 
 ## 02. 잘못된 데이터 수정하기
 
+1. **NaN**은 판다스에서 누락된 값을 표시하는 기호이다. isna() 메서드를 사용하여 NaN의 여부를 확인하거나 nonta() 메서드를 활용해 NaN이 아닌 값인지 체크할 수 있다.
+2. **정규 표현식**은 문자열에서 패턴을 찾고 대체하기 위한 규칙의 모음이다. 정규 표현식을 사용하면 복잡한 패턴을 가진 문자열을 쉽게 검색할 수 있다.
+
+※ 표로 정리하는 핵심 함수와 메서드
+
+<img width="585" height="235" alt="image" src="https://github.com/user-attachments/assets/d1b2961d-cf1c-44ae-b962-de0309a0ce77" />
 
 
 # 2️⃣ 수행 인증
