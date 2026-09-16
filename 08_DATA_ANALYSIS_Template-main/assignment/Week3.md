@@ -47,6 +47,9 @@ https://www.youtube.com/watch?v=hhbzUEQWdTg&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXg
 
 <img width="590" height="308" alt="image" src="https://github.com/user-attachments/assets/dabcb0e2-7d09-4971-b5c9-137463a63fc6" />
 
+## 02. 잘못된 데이터 수정하기
+
+
 
 # 2️⃣ 수행 인증
 
