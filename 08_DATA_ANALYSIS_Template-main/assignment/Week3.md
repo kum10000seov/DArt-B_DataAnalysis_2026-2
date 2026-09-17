@@ -99,23 +99,6 @@ https://www.youtube.com/watch?v=hhbzUEQWdTg&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXg
 <img width="1253" height="689" alt="image" src="https://github.com/user-attachments/assets/cd601a27-99bb-48d4-b254-f21f66bbf780" />
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <br>
 <br>
 
@@ -183,7 +166,8 @@ https://www.youtube.com/watch?v=hhbzUEQWdTg&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXg
 ```
 
 ```
-여기에 선택한 답과 그 이유를 간단히 서술해주세요!
+3번
+두 데이터프레임 간 공통 열 이름이 없으므로 병합 기준을 left_on='col1', right_on='col3'으로 각각 지정해야 한다. 또한 결과에 일치하지 않는 행('z', 'w')까지 누락 없이 모두 포함되고 빈자리가 NaN으로 채워졌으므로 완전 외부 조인인 how='outer'를 사용해야 한다.
 ```
 
 
