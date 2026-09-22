@@ -34,6 +34,7 @@ https://www.youtube.com/watch?v=D46j-e_IHlI&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXg
 <br>
 
 <!-- 여기까진 그대로 둬 주세요-->
+<img width="2376" height="1594" alt="데이터분석학습로드맵" src="https://github.com/user-attachments/assets/557bbc8d-51bc-40d2-9623-b10f80ba07ea" />
 
 
 # 1️⃣ 개념 정리 
