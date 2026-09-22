@@ -32,6 +32,7 @@ https://www.youtube.com/watch?v=hhbzUEQWdTg&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXg
 <br>
 
 <!-- 여기까진 그대로 둬 주세요-->
+<img width="2376" height="1594" alt="데이터분석학습로드맵" src="https://github.com/user-attachments/assets/15b2cbba-1a1e-484d-bf1c-0e09e2fcf96a" />
 
 
 # 1️⃣ 개념 정리 
