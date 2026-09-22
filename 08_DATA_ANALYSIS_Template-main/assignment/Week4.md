@@ -53,10 +53,14 @@ https://www.youtube.com/watch?v=Cbk_tQtuhbM&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXg
 
 ### 기술통계 구하기
 
+---
+
 - **기술통계, 요약통계(Descriptive Statistics, Summary Statistics):** 정량적 수치로 전체 데이터의 특징을 요약하거나 이해하기 쉬운 간단한 그래프로 시각화하여 표현하는 것
 - **탐색적 데이터 분석(Exploratory Data Analysis):** 데이터 시각화를 아우르는 데이터 분석 방법
 
 ### describe() 메서드 
+
+---
 
 판다스는 데이터프레임에서 수치형 열에 대한 8가지 통계량을 계산하여 자동으로 추출해낼 수 있다.
 
