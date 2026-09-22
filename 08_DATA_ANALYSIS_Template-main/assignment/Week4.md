@@ -106,6 +106,8 @@ print("평균:", sum / len(x))
 ### range() 함수
 range() 함수의 핵심은 반복이다. 하나의 숫자를 입력할 경우 0부터 입력된 숫자 **직전까지** 반복할 수 있는 객체를 만든다.
 따라서, for 문에 range(3)을 입력하면 변수 i에 0, 1, 2를 대입할 수 있다. 결국 x[0]부터 x[2]까지 반복하며 sum에 값이 누적된다.
+
+
 <img width="194" height="131" alt="image" src="https://github.com/user-attachments/assets/a9335d4d-0eb0-425a-a536-a24f3c9c31fd" />
 
 
