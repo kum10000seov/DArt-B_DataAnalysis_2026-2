@@ -73,6 +73,43 @@ ns_book6.describe()
 | 0.25, 0.5, 0.75 | 순서대로 늘어 놓았을 때 25% 지점, 중앙값, 75% 지점 |
 | max | 최댓값 |
 
+## describe() 메서드의 응용
+
+```python
+ns_book7.describe(percentiles=[0.3, 0.6, 0.9])
+```
+
+특정 비율에 위치한 값을 보고 싶다면 괄호 안에 percentiles=[수치]를 작성하면 된다.
+
+```python
+ns_book7.describe(include='object')
+```
+
+열의 데이터 타입이 수치가 아닌 다른 데이터 타입의 열의 기술통계를 보고 싶다면 **include='type' 매개변수**에 데이터 타입을 지정할 수도 있다.
+| 통계량 | 의미 |
+|:---|:---:|
+| count | 누락된 값을 제외한 데이터의 개수 |
+| unique | 고유한 값의 개수 |
+| top | 가장 많이 등장하는 값 |
+| freq | top행에 등장하는 항목에 대한 빈도수 |
+
+## 평균과 range() 함수
+
+```python
+x = [10, 20, 30]
+sum = 0
+for i in range(3)
+  sum += x[i]
+print("평균:", sum / len(x))
+```
+
+### range() 함수
+range() 함수의 핵심은 반복이다. 하나의 숫자를 입력할 경우 0부터 입력된 숫자 **직전까지** 반복할 수 있는 객체를 만든다.
+따라서, for 문에 range(3)을 입력하면 변수 i에 0, 1, 2를 대입할 수 있다. 결국 x[0]부터 x[2]까지 반복하며 sum에 값이 누적된다.
+<img width="194" height="131" alt="image" src="https://github.com/user-attachments/assets/a9335d4d-0eb0-425a-a536-a24f3c9c31fd" />
+
+
+
 ---
 
 ## 02. 분포 요약하기
