@@ -46,7 +46,6 @@ https://www.youtube.com/watch?v=Cbk_tQtuhbM&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXg
 
 ### 목차
 
-[01. 기술통계 구하기](#01.-기술통계-구하기)
 - [가. describe() 메서드](#가.-describe()-메서드)
 - [나. 평균 구하기](#나.-평균-구하기)
 - [다. 중앙값 구하기](#다.-중앙값-구하기)
@@ -58,7 +57,7 @@ https://www.youtube.com/watch?v=Cbk_tQtuhbM&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXg
 
 ---
 
-## 01. 기술통계 구하기
+## 기술통계 구하기
 
 - **기술통계, 요약통계(Descriptive Statistics, Summary Statistics):** 정량적 수치로 전체 데이터의 특징을 요약하거나 이해하기 쉬운 간단한 그래프로 시각화하여 표현하는 것
 - **탐색적 데이터 분석(Exploratory Data Analysis):** 데이터 시각화를 아우르는 데이터 분석 방법
@@ -280,15 +279,20 @@ ns_book7.to_csv('ns_book7.csv', index=False)
 
 ---
 
-## 02. 분포 요약하기
+### 02. 분포 요약하기
 
---
+---
 
-**핵심 키워드:** `평균` `중앙값` `분위수` `분산` `표준편차` `최빈값`
+**핵심 키워드:** `산점도` `히스토그램` `도수` `로그스케일` `상자수염그림`
 
 ### 목차
 
-[01. 기술통계 구하기](#01.-기술통계-구하기)
+- [01. 기술통계 구하기](#01.-기술통계-구하기)
+
+
+---
+
+## 01. 산점도 그리기
 
 
 # 2️⃣ 수행 인증
