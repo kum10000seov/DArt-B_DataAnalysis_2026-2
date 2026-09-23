@@ -292,7 +292,42 @@ ns_book7.to_csv('ns_book7.csv', index=False)
 
 ---
 
-## 01. 산점도 그리기
+## 가. 산점도 scatter()
+### 1. 맷플롯립 호출 후 산점도 그리기
+
+산점도는 두 변수(variable) 혹은 두 가지 특성(feature)값을 직교 좌표계에 점으로 찍는 그래프로, 데이터를 화면에 뿌리듯 그리는 그래프라고 볼 수 있다.
+산점도를 통해 두 변수 간 상관관계를 확인하는 것도 가능하다.
+
+파이썬에서 그래프를 그리는 데 사용하는 대표적인 패키지는 맷플롯립(matplotlib)이다.
+
+```python
+import matplotlib.pyplot as plt
+plt.scatter([1,2,3,4], [1,2,3,4])
+plt.show()
+```
+```python
+plt.scatter(ns_book7['번호'], ns_book7['대출건수'])
+plt.show()
+```
+```python
+average_borrows = ns_book7['대출건수']/ns_book7['도서권수']
+plt.scatter(average_borrows, ns_book7['대출건수'], alpha=0.1)
+plt.show()
+```
+
+### 2. 투명도 조절하기 alpha
+```python
+plt.scatter(ns_book7['도서권수'], ns_book7['대출건수'], alpha=0.1)
+plt.show
+```
+> alpha는 투명도를 지정한다. 0에 가까울수록 투명해지고, 1에 가까울수록 불투명해진다.
+
+
+## 나. 히스토그램 
+
+히스토그램은 수치형 특성의 값을 일정한 구간, 계급(bin)으로 나누어 구간 안에 포함된 데이터 개수를 막대 그래프로 그린 그래프이다.
+구간 안에 속한 데이터의 갯수를 도수(frequency)라고 부른다.
+히스토그램에 나오는 구간과 도수를 표로 요약한 것을 도수분포표(frequency table)이라고 한다.
 
 
 # 2️⃣ 수행 인증
