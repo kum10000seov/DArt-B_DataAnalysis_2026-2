@@ -46,17 +46,17 @@ https://www.youtube.com/watch?v=Cbk_tQtuhbM&list=PLVsNizTWUw7FGzSRCkQrPEEe-ljVXg
 
 ### 목차
 
-- [기술통계 구하기](#기술통계-구하기)
+- [01. 기술통계 구하기](#01.-기술통계-구하기)
 
 
 ---
 
-## 기술통계 구하기
+## 01. 기술통계 구하기
 
 - **기술통계, 요약통계(Descriptive Statistics, Summary Statistics):** 정량적 수치로 전체 데이터의 특징을 요약하거나 이해하기 쉬운 간단한 그래프로 시각화하여 표현하는 것
 - **탐색적 데이터 분석(Exploratory Data Analysis):** 데이터 시각화를 아우르는 데이터 분석 방법
 
-## describe() 메서드 
+## 가-1. describe() 메서드 
 
 판다스는 데이터프레임에서 수치형 열에 대한 8가지 통계량을 계산하여 자동으로 추출해낼 수 있다.
 
@@ -73,9 +73,9 @@ ns_book6.describe()
 | `0.25, 0.5, 0.75` | 순서대로 늘어 놓았을 때 25% 지점, 중앙값, 75% 지점 |
 | `MAX` | 최댓값 |
 
-## describe() 메서드의 응용
+## 가-2. describe() 메서드의 응용
 
-### 1. 사분위수 지정
+### (1) 사분위수 지정
 
 ```python
 ns_book7.describe(percentiles=[0.3, 0.6, 0.9])
@@ -83,7 +83,7 @@ ns_book7.describe(percentiles=[0.3, 0.6, 0.9])
 
 > 특정 비율에 위치한 값을 보고 싶다면 괄호 안에 percentiles=[수치]를 작성하면 된다.
 
-### 2. 비수치형 데이터 기술통계 
+### (2) 비수치형 데이터 기술통계 
 
 ```python
 ns_book7.describe(include='object')
@@ -99,7 +99,7 @@ ns_book7.describe(include='object')
 | `TOP` | 가장 많이 등장하는 값 |
 | `FREQ` | top행에 등장하는 항목에 대한 빈도수 |
 
-## 평균 구하기
+## 나. 평균 구하기
 
 ```python
 x = [10, 20, 30]
