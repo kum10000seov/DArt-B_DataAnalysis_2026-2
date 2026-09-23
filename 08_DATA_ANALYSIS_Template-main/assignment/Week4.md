@@ -75,11 +75,15 @@ ns_book6.describe()
 
 ## describe() 메서드의 응용
 
+1. 사분위수 지정
+
 ```python
 ns_book7.describe(percentiles=[0.3, 0.6, 0.9])
 ```
 
 > 특정 비율에 위치한 값을 보고 싶다면 괄호 안에 percentiles=[수치]를 작성하면 된다.
+
+2. 비수치형 데이터 기술통계 
 
 ```python
 ns_book7.describe(include='object')
@@ -111,7 +115,7 @@ print("평균:", sum / len(x))
 - 이러한 반복 구조는 수학의 Σ와 같다고 볼 수 있다.
 
 | 코드 구조 | 수학적 의미 |
-|:---|:---:|
+|:---:|:---:|
 | <img width="194" height="131" alt="image" src="https://github.com/user-attachments/assets/a9335d4d-0eb0-425a-a536-a24f3c9c31fd" /> | <img width="248" height="87" alt="image" src="https://github.com/user-attachments/assets/0185a265-0a7f-4d49-ba27-af865c132211" /> |
 
 
