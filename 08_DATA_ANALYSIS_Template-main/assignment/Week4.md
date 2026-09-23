@@ -108,9 +108,10 @@ range() 함수의 핵심은 반복이다. 하나의 숫자를 입력할 경우 0
 따라서, for 문에 range(3)을 입력하면 변수 i에 0, 1, 2를 대입할 수 있다. 결국 x[0]부터 x[2]까지 반복하며 sum에 값이 누적된다.
 이러한 반복 구조는 수학의 Σ와 같다고 볼 수 있다.
 
+| <img width="194" height="131" alt="image" src="https://github.com/user-attachments/assets/a9335d4d-0eb0-425a-a536-a24f3c9c31fd" /> | <img width="248" height="87" alt="image" src="https://github.com/user-attachments/assets/0185a265-0a7f-4d49-ba27-af865c132211" /> |
+|:---|:---:|
 
-<img width="194" height="131" alt="image" src="https://github.com/user-attachments/assets/a9335d4d-0eb0-425a-a536-a24f3c9c31fd" />
-<img width="248" height="87" alt="image" src="https://github.com/user-attachments/assets/0185a265-0a7f-4d49-ba27-af865c132211" />
+
 
 
 ### mean() 메서드
