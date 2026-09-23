@@ -470,7 +470,26 @@ plt.show()
 
 # 2️⃣ 수행 인증
 
-<!-- 교재에서 안내된 과정을 직접 실행해본 뒤, 진행 결과가 보이도록 3장 이상의 스크린샷을 캡처하여 아래에 첨부해주세요.-->
+<img width="1169" height="522" alt="image" src="https://github.com/user-attachments/assets/2784cf36-f72a-4073-bce9-6874127a7764" />
+<img width="1254" height="691" alt="image" src="https://github.com/user-attachments/assets/7581f220-2580-4ed9-b6a4-d29e307426fd" />
+<img width="1256" height="695" alt="image" src="https://github.com/user-attachments/assets/f8e3abc5-7019-4eec-9714-8534f88aabbb" />
+<img width="1256" height="687" alt="image" src="https://github.com/user-attachments/assets/a64673fd-1fd1-4242-aa27-3445534e30c4" />
+<img width="1256" height="691" alt="image" src="https://github.com/user-attachments/assets/afa8742d-b1f1-47dc-9a8e-a77f060329b3" />
+<img width="1255" height="691" alt="image" src="https://github.com/user-attachments/assets/75ac373f-3d81-4788-bee6-7d5195afd8b1" />
+<img width="1263" height="695" alt="image" src="https://github.com/user-attachments/assets/c3dbe917-b2bd-4a4c-b386-3768d9b2aba6" />
+<img width="1253" height="691" alt="image" src="https://github.com/user-attachments/assets/d5b14b65-a31e-48dd-9a0d-83181809c979" />
+<img width="1261" height="695" alt="image" src="https://github.com/user-attachments/assets/aa65477e-86ae-4b79-94d3-8ecdc9fcf3e6" />
+<img width="1261" height="694" alt="image" src="https://github.com/user-attachments/assets/d47a9fb1-cb20-484d-b9ca-92dd32277a97" />
+<img width="1253" height="692" alt="image" src="https://github.com/user-attachments/assets/9cd60405-8850-4e8c-9f70-15c6201058bc" />
+<img width="1257" height="692" alt="image" src="https://github.com/user-attachments/assets/9cc987a6-fdf2-455f-b256-46039d5dc277" />
+<img width="1258" height="694" alt="image" src="https://github.com/user-attachments/assets/7548b5b3-4f9f-4564-9232-9515f88d0565" />
+<img width="1251" height="695" alt="image" src="https://github.com/user-attachments/assets/4b1198c0-bfb3-4392-aecb-373c41cccd04" />
+<img width="1262" height="696" alt="image" src="https://github.com/user-attachments/assets/8b54442d-659a-4676-a55a-76253da8c11a" />
+<img width="1253" height="694" alt="image" src="https://github.com/user-attachments/assets/7d6b459b-40b1-4bf7-ace9-3be56f00bb54" />
+<img width="1253" height="696" alt="image" src="https://github.com/user-attachments/assets/57d0fcca-3fa5-4ac4-bbd5-6fef74767b2a" />
+<img width="572" height="396" alt="image" src="https://github.com/user-attachments/assets/4896e1a4-35ac-4f2f-bb5b-6f7b9d610860" />
+
+
 
 
 
@@ -485,8 +504,7 @@ plt.show()
 작업은 코랩에서 진행한 뒤, 코랩 링크를 아래에 첨부해주세요.**
 
 ```
-여기에 코랩 링크를 첨부해주세요!
-(제출 전, 코랩의 공유 설정을 ‘링크가 있는 모든 사용자가 보기 가능’으로 변경했는지 반드시 확인해주세요.)
+https://colab.research.google.com/drive/1PxP36YoTLikk9uWpCW2NGBJsAXH3Tzbt?usp=sharing
 ```
 
 
