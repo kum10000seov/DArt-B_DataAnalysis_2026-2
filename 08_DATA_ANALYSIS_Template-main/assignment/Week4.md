@@ -148,6 +148,51 @@ temp_df.median()
 ns_book7['대출건수'].drop_duplicates().median()
 ```
 
+## 라. 최솟값, 최댓값, 분위수, 백분위 구하기
+
+### 1. 최솟값과 최댓값 구하기
+
+```python
+ns_book7['대출건수'].min()
+```
+
+```python
+ns_book7['대출건수'].max()
+```
+
+### 2. 분위수 구하기
+
+```python
+ns_book7['대출건수'].quantile([0.25, 0.5, 0,75])
+```
+
+```python
+pd.Series([1,2,3,4,5]).quantile(0.9)
+```
+> interpolation 매개변수의 기본적인 보간 방식은 linear이다.
+
+### ※ interpolation 매개변수
+
+두 지점 사이에 놓인 특정 위치의 값을 구하는 방법을 보간(interpolation)이라고 하며, 판다스에서 보간을 수행하는 매개변수를 interpolation 매개변수라고 한다.
+quantile 메서드의 interpolation 매개변수를 통해 두 지점 사이에 놓인 특정 위치의 값을 어떻게 구할지 그 방식을 내 마음대로 정할 수 있다.
+
+interpolation 매개변수의 보간방식 : linear, midpoint, nearest, lower, higher
+
+#### 1. midpoint
+
+```python
+pd.Series([1,2,3,4,5]).quantile(0.9, interpolation='midpoint')
+```
+> midpoint는 분위수에 상관없이 무조건 두 수 사이의 중앙값을 사용한다.
+
+#### 2. nearest
+
+```python
+pd.Series([1,2,3,4,5]).quantile(0.9, interpolation='nearest')
+```
+> nesrest는 두 수 중에서 더 가까운 값을 선택한다.
+> 이 외에도 더 작은 값을 선택하는 lower, 더 큰 값을 선택하는 higher가 있다.
+
 ---
 
 ## 02. 분포 요약하기
