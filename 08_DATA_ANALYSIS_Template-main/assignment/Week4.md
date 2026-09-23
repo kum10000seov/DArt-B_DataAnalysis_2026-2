@@ -93,7 +93,7 @@ ns_book7.describe(include='object')
 | top | 가장 많이 등장하는 값 |
 | freq | top행에 등장하는 항목에 대한 빈도수 |
 
-## 평균과 range() 함수
+## 평균 구하기
 
 ```python
 x = [10, 20, 30]
@@ -106,11 +106,18 @@ print("평균:", sum / len(x))
 ### range() 함수
 range() 함수의 핵심은 반복이다. 하나의 숫자를 입력할 경우 0부터 입력된 숫자 **직전까지** 반복할 수 있는 객체를 만든다.
 따라서, for 문에 range(3)을 입력하면 변수 i에 0, 1, 2를 대입할 수 있다. 결국 x[0]부터 x[2]까지 반복하며 sum에 값이 누적된다.
+이러한 반복 구조는 수학의 시그마 기호와 같다고 볼 수 있다.
 
 
 <img width="194" height="131" alt="image" src="https://github.com/user-attachments/assets/a9335d4d-0eb0-425a-a536-a24f3c9c31fd" />
 
+### mean() 메서드
 
+```python
+ns_book7['대출건수'].mean()
+```
+
+판다스 데이터프레임과 시리즈 객에체서 평균을 계산하는 가장 편리한 메서드는 함수이름 뒤에 .mean()만 붙이면 된다.
 
 ---
 
