@@ -323,11 +323,138 @@ plt.show
 > alpha는 투명도를 지정한다. 0에 가까울수록 투명해지고, 1에 가까울수록 불투명해진다.
 
 
-## 나. 히스토그램 
+## 나. 히스토그램 hist()
 
 히스토그램은 수치형 특성의 값을 일정한 구간, 계급(bin)으로 나누어 구간 안에 포함된 데이터 개수를 막대 그래프로 그린 그래프이다.
 구간 안에 속한 데이터의 갯수를 도수(frequency)라고 부른다.
 히스토그램에 나오는 구간과 도수를 표로 요약한 것을 도수분포표(frequency table)이라고 한다.
+
+### 히스토그램 그리기
+- **hist() 함수**는 1차원 데이터를 입력받아 히스토그램을 그리며, 기본적으로 데이터를 10개의 구간으로 나눈다.
+- **bins 매개변수**를 통해 데이터를 몇 개 구간으로 나눌지 정할 수 있다.
+
+```python
+plt.hist([0,3,5,6,7,7,9,13], bins=5)
+plt.show()
+```
+
+### 히스토그램 구간 파악하기
+- numpy에서 제공하는 **histogram_bin_edges() 함수**를 통해 다섯 구간의 경곗값을 확인한다.
+```python
+import numpy as np
+np.histogram_bin_edges([0,3,5,6,7,7,9,13], bins=5)
+```
+
+## 표준정규분포 난수 생성
+
+넘파이의 `randn()` 함수는 평균이 0이고 표준편차가 1인 표준정규분포에서 난수를 생성한다. 원하는 표본의 개수를 인수로 전달하여 난수 배열을 만들 수 있다.
+
+### 주요 함수
+
+| 함수 | 기능 |
+|---|---|
+| `np.random.seed()` | 난수 생성기의 초기값 고정 |
+| `np.random.randn()` | 표준정규분포를 따르는 난수 생성 |
+| `np.mean()` | 배열의 평균 계산 |
+| `np.std()` | 배열의 표준편차 계산 |
+| `print()` | 계산 결과 출력 |
+
+### 난수 생성
+
+```python
+import numpy as np
+
+np.random.seed(42)
+random_samples = np.random.randn(1000)
+```
+
+> **함수 설명**
+>
+> - `np.random.seed(42)`: 난수 생성기의 초기값을 42로 고정
+> - `np.random.randn(1000)`: 표준정규분포를 따르는 난수 1,000개 생성
+> - `random_samples`: 생성된 난수 1,000개를 저장한 넘파이 배열
+
+`randn()` 함수는 코드를 실행할 때마다 다른 난수를 생성한다. `seed()` 함수로 초기값을 고정하면 코드를 반복 실행하더라도 동일한 난수를 생성할 수 있다. 이는 분석 결과의 재현성을 확보하는 데 활용된다.
+
+> **함수 설명**
+>
+> - `np.mean(random_samples)`: 생성된 난수의 평균 계산
+> - `np.std(random_samples)`: 생성된 난수의 표준편차 계산
+> - `print()`: 평균과 표준편차를 차례대로 출력
+
+### 결과 해석
+
+- 표본 평균: 약 `0.019`
+- 표본 표준편차: 약 `0.979`
+- 이론적 평균: `0`
+- 이론적 표준편차: `1`
+
+생성된 표본의 평균이 0에 가깝고 표준편차가 1에 가까우므로, `random_samples`가 표준정규분포의 특성과 대체로 일치함을 확인할 수 있다.
+
+### 로그 스케일로 구간 조정하기
+
+한 구간의 도수가 너무 커서 다른 구간에는 도수가 표시되지 않을 정도라면 y축을 로그 스케일로 바꿔 해결할 수 있다.
+로그 스케일(log scale)로 바꾼다는 것은 y축에 로그 함수를 적용하여 간극을 크게 줄이는 것을 말한다.
+**즉, 로그 스케일로 변환된 그래프를 볼 경우 실제 데이터는 훨씬 더 격차가 크다는 점을 반드시 감안해야 한다.**
+<img width="1469" height="815" alt="image" src="https://github.com/user-attachments/assets/d9912669-048f-4e13-a5f5-796cb4972b51" />
+
+```python
+plt.hist(ns_book7['대출건수'], bins=100)
+plt.yscale('log')
+plt.show()
+```
+> x축에 로그 스케일을 적용하고 싶다면 xscale() 함수를 적용하면 된다.
+
+## 다. 상자 수염 그림 그리기
+
+### 상자 수염 그림 그리기 순서
+(1) 사분위수를 계산한다. 25% 지점과 75% 지점이 각각 밑면과 윗면이 되는 직사각형을 그린다. 이때, 두 지점간 거리를 IQR(Interquartile Range)라고 한다.
+(2) 50% 지점, 즉 중간값에 해당하는 지점에 수평선을 긋는다.
+(3) 사각형의 밑면과 윗면에서 사각형 높이의 1.5배만큼 떨어진 거리 안에서 가장 멀리 있는 샘플까지 수직선을 긋는다.
+(4) 이 수직선 밖에서 최솟값과 최댓값까지 데이터를 점으로 표시한다. 이 영역의 데이터를 **이상치**(outliar)라고 부른다.
+
+<img width="1102" height="751" alt="image" src="https://github.com/user-attachments/assets/d046691e-df17-47bd-87fe-64593ec25130" />
+
+### boxplot() 함수
+
+```python
+plt.boxplot(ns_book7[['대출건수', '도서권수']])
+plt.show()
+```
+<img width="1127" height="709" alt="image" src="https://github.com/user-attachments/assets/c2718b73-1680-483a-80af-de431ceee896" />
+
+```python
+plt.boxplot(ns_book7[['대출건수', '도서권수']])
+plt.yscale('log')
+plt.show()
+```
+<img width="1120" height="714" alt="image" src="https://github.com/user-attachments/assets/04c847ff-4f0a-4dd1-b7f9-0d324c748b43" />
+
+### 수평으로 그리기
+
+```python
+plt.boxplot(ns_book7[['대출건수', '도서권수']], vert=False)
+plt.xscale('log')
+plt.show()
+```
+
+### 수염 길이 조정하기
+
+boxplot() 함수의 **whis 매개변수**에서 수염 길이를 조정할 수 있다. 기본값은 1.5이다.
+
+```python
+plt.boxplot(ns_book7[['대출건수', '도서권수']], whis=10)
+plt.yscale('log')
+plt.show()
+```
+
+whis 매개변수는 백분율로도 지정할 수 있다. (10, 90)으로 지정한다면 10%, 90% 백분위수에 해당하는 데이터까지 수염을 그린다.
+
+```python
+plt.boxplot(ns_book7[['대출건수', '도서권수']], whis=(0,100))
+plt.yscale('log')
+plt.show()
+```
 
 
 # 2️⃣ 수행 인증
