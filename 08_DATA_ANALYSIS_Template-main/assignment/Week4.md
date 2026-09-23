@@ -409,11 +409,14 @@ plt.show()
 
 ### 상자 수염 그림 그리기 순서
 (1) 사분위수를 계산한다. 25% 지점과 75% 지점이 각각 밑면과 윗면이 되는 직사각형을 그린다. 이때, 두 지점간 거리를 IQR(Interquartile Range)라고 한다.
+
 (2) 50% 지점, 즉 중간값에 해당하는 지점에 수평선을 긋는다.
+
 (3) 사각형의 밑면과 윗면에서 사각형 높이의 1.5배만큼 떨어진 거리 안에서 가장 멀리 있는 샘플까지 수직선을 긋는다.
+
 (4) 이 수직선 밖에서 최솟값과 최댓값까지 데이터를 점으로 표시한다. 이 영역의 데이터를 **이상치**(outliar)라고 부른다.
 
-<img width="1102" height="751" alt="image" src="https://github.com/user-attachments/assets/d046691e-df17-47bd-87fe-64593ec25130" />
+
 
 ### boxplot() 함수
 
@@ -421,14 +424,13 @@ plt.show()
 plt.boxplot(ns_book7[['대출건수', '도서권수']])
 plt.show()
 ```
-<img width="1127" height="709" alt="image" src="https://github.com/user-attachments/assets/c2718b73-1680-483a-80af-de431ceee896" />
 
 ```python
 plt.boxplot(ns_book7[['대출건수', '도서권수']])
 plt.yscale('log')
 plt.show()
 ```
-<img width="1120" height="714" alt="image" src="https://github.com/user-attachments/assets/04c847ff-4f0a-4dd1-b7f9-0d324c748b43" />
+
 
 ### 수평으로 그리기
 
