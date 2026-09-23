@@ -291,7 +291,7 @@ ns_book7.to_csv('ns_book7.csv', index=False)
 - [가. 산점도](#가.-산점도)
 - [나. 히스토그램](#나.-히스토그램)
 - [다. 상자 수염 그림](#다.-상자-수염-그림)
-
+- [표로 정리하는 핵심 함수와 메서드](#표로-정리하는-핵심-함수와-메서드)
 
 ---
 
@@ -462,6 +462,10 @@ plt.boxplot(ns_book7[['대출건수', '도서권수']], whis=(0,100))
 plt.yscale('log')
 plt.show()
 ```
+
+## ★ 표로 정리하는 핵심 함수와 메서드
+<img width="587" height="223" alt="image" src="https://github.com/user-attachments/assets/4e2ed5a5-532b-4ac2-be37-1bf8ba439042" />
+
 
 
 # 2️⃣ 수행 인증
