@@ -75,7 +75,7 @@ ns_book6.describe()
 
 ## describe() 메서드의 응용
 
-1. 사분위수 지정
+### 1. 사분위수 지정
 
 ```python
 ns_book7.describe(percentiles=[0.3, 0.6, 0.9])
@@ -83,7 +83,7 @@ ns_book7.describe(percentiles=[0.3, 0.6, 0.9])
 
 > 특정 비율에 위치한 값을 보고 싶다면 괄호 안에 percentiles=[수치]를 작성하면 된다.
 
-2. 비수치형 데이터 기술통계 
+### 2. 비수치형 데이터 기술통계 
 
 ```python
 ns_book7.describe(include='object')
