@@ -110,6 +110,8 @@ range() 함수의 핵심은 반복이다. 하나의 숫자를 입력할 경우 0
 
 
 <img width="194" height="131" alt="image" src="https://github.com/user-attachments/assets/a9335d4d-0eb0-425a-a536-a24f3c9c31fd" />
+<img width="248" height="87" alt="image" src="https://github.com/user-attachments/assets/0185a265-0a7f-4d49-ba27-af865c132211" />
+
 
 ### mean() 메서드
 
