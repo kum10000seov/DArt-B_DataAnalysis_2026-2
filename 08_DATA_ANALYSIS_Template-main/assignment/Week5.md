@@ -133,9 +133,7 @@ print(
 
 ### DPI
 
-DPI는 `Dots Per Inch`의 약자로,
-
-> 1인치를 몇 개의 점 또는 픽셀로 표현할 것인지를 나타내는 값이다. PPI(Pixels Per Inch)라고도 한다.
+DPI는 `Dots Per Inch`의 약자로, 1인치를 몇 개의 점 또는 픽셀로 표현할 것인지를 나타내는 값이다. PPI(Pixels Per Inch)라고도 한다.
 
 ---
 
