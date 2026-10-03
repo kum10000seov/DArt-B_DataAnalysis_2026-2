@@ -297,16 +297,6 @@ plt.rcParams['scatter.marker'] = '*'
 
 이후 그리는 산점도의 기본 마커가 별표(`*`)로 바뀐다.
 
-```python
-plt.scatter(
-    ns_book7['도서권수'],
-    ns_book7['대출건수'],
-    alpha=0.1
-)
-
-plt.show()
-```
-
 ---
 
 ### 특정 그래프의 마커만 변경
